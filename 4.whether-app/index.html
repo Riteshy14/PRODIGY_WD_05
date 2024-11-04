@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/clear.png" />
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#" class="nav-home">Home</a>
+            <a href="#" class="nav-about">About Us</a>
+            <a href="#" class="nav-contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="backimg">
+        <img src="#" alt="Background Image" />
+    </div>
+
+    <main class="card" id="home">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" />
+            <button><img src="img/search.png" alt="Search" /></button>
+        </div>
+
+        <div class="error">
+            <p>Invalid city name.</p>
+        </div>
+
+        <div class="weather">
+            <img src="img/rain.png" class="weather-icon" alt="Weather Icon" />
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="img/humidity.png" alt="Humidity" />
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/wind.png" alt="Wind Speed" />
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="card" id="about" style="display: none;">
+        <h2>About Us</h2>
+        <p>This weather app provides real-time weather information based on your location.</p>
+        <p>We aim to deliver accurate and timely weather updates to help you plan your day better.</p>
+        <button class="back-btn">Back to Home</button>
+    </section>
+
+    <section class="card" id="contact" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>Name: Ritesh Yadav</p>
+        <p>Phone: +91 86525XXXXX</p>
+        <p>Email: ritesh.s.yadav@slrtce.in</p>
+        <button class="back-btn">Back to Home</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
